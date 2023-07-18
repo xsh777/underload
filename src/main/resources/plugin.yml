@@ -1,0 +1,6 @@
+name: '$name'
+version: '$version'
+main: 'anonymous.underload.Underload'
+description: '$description'
+load: 'STARTUP'
+api-version: "$apiVersion"
