@@ -20,6 +20,7 @@ repositories {
 dependencies {
     paperweight.paperDevBundle("1.20.1-R0.1-SNAPSHOT")
     implementation("org.bstats", "bstats-bukkit", "3.0.2")
+    implementation("com.maxmind.geoip2", "geoip2", "4.0.1")
 }
 
 tasks {
@@ -50,5 +51,6 @@ tasks {
         fun reloc(pkg: String) = relocate(pkg, "anonymous.underload.dependency.$pkg")
 
         reloc("org.bstats")
+        reloc("com.maxmind.geoip2")
     }
 }
